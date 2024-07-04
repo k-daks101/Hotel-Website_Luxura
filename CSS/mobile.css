@@ -1,0 +1,71 @@
+#navbar .logo
+{
+  float: none;
+  text-align: center;
+}
+
+#navbar ul, #navbar ul li
+{
+  float: none;
+}
+
+#navbar ul li a
+{
+  padding: 5px;
+  border-bottom: #444 dotted 1px;
+}
+
+
+
+/* Home Info */
+#home-info .Amenities-img
+{
+  display: none;
+}
+
+
+#home-info .Amenities-Services
+{
+  /* float: right; */
+  background: #333;
+  width: 100%;
+ 
+}
+
+.box
+{
+  float: none;
+  width: 100%;
+} 
+
+
+/* About */
+
+
+#infocont
+{
+  flex-direction: column;
+  width: 100%;
+}
+#about-info .info-right, 
+#about-info .info-left
+{
+width: 100%;
+}
+
+#about-info .info-right
+{
+  padding-top: 30px;
+}
+
+#l-heading
+{
+  text-align: center;
+}
+
+
+#booking-info .box1
+{ 
+  width: 100%;
+  border-bottom: #444 dotted 1px;
+}

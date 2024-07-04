@@ -1,0 +1,597 @@
+/*CSS Reset*/
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*  Main Styling */
+html, body
+{
+  font-family: cursive;
+  line-height: 1.9em;
+
+}
+
+a
+{
+  color: #333;
+  text-decoration: none;
+
+}
+
+h1,h2,h3
+{
+  padding-bottom: 20px;
+}
+
+p
+{
+  margin: 10px 0;
+}
+
+/* Utility Classes */
+.container
+{
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.text-primary
+{
+  color: #f7c08a;
+}
+
+.text-primaryy
+{
+  color: linear-gradient(270deg, #ff994f,#fa6d86);
+}
+
+.Lead
+{
+  font-size: 20px;
+}
+
+
+.btn
+{
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding-top: 13px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover
+{
+  background: #f7c08a;
+  color:#333;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+.btn-light
+{
+  background: #f7c08a;
+  background-color: #444;
+  padding: 20px ;
+
+
+}
+
+
+.bg-dark
+{
+  background: #333;
+  color: #fff;
+}
+
+.bg-primary
+{
+  background: #f7c08a;
+  color:black;
+}
+
+.clr
+{
+  clear: both;
+}
+
+.clr
+{
+  clear: both;
+}
+
+
+.l-heading
+{
+  font-size: 40px;
+}
+
+
+/* Padding */
+.py-1
+{
+  padding: 10px 0;
+}
+.py-2
+{
+  padding: 20px 0;
+}
+.py-3
+{
+  padding: 30px 0;
+}
+
+/*  Navbar */
+#navbar
+{
+  background: #333;
+  color: #fff;
+  overflow: auto;
+}
+
+
+
+
+#navbar a
+{
+  color:#fff;
+}
+
+#navbar h1
+{
+  float: left;
+  padding-top: 20px;
+}
+
+#navbar ul
+{
+  list-style-type: none;
+  float: right;
+
+  /* to get rid of the bullets */
+}
+
+#navbar::after
+{
+  content:"";
+  position: absolute;
+  background-color: #f7c08a;
+  height: 3px;
+
+}
+
+#navbar ul li
+{
+  float: left;
+}
+
+.case{
+  border-bottom: #333 0.2rem solid;
+}
+.case:hover{
+  border-bottom: #ffffff 0.2rem solid;
+}
+
+#navbar ul li a
+{
+  display: block;
+  padding: 20px;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+#navbar ul li a:hover,
+#navbar ul li a.current
+{
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Showcase */
+
+#showcase
+{
+  background: url('../IMG/pexels-pixabay-258154.jpg') center center/cover;
+
+  height: 700px;
+}
+
+
+#showcase .showcase-content
+{
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+  transition: opacity 0.5s ease;
+}
+
+
+#showcase .showcase-content h1
+{
+  font-family: cursive;
+  font-size: 30px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p
+{
+  padding-bottom: 20px;
+  line-height: 1.9em;
+}
+
+#showcase:hover .showcase-content {
+  opacity: 0.9;
+}
+
+
+/* Home info */
+#home-info
+{
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+}
+
+#home-info .Amenities-img
+{
+   /*float: left; */
+   width: 48%;
+  max-width: 100%;
+  background: url('../IMG/Picture5.png');
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  /* height: 280px;  */
+}
+
+ #home-info .Amenities-img:hover
+ {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+ #home-info .Amenities-Services
+{
+  /* float: right; */
+  background: #333;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+}
+#home-info .Amenities-Services p{
+  font-size: .8rem;
+
+
+
+
+}
+/* Features */
+.box
+{
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+  background: #f7c08a;
+
+}
+
+.box i
+{
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/* About Info */
+
+
+#aboutbody
+{
+  background: antiquewhite;
+}
+
+
+#infocont{
+  display: flex;
+  flex-direction: row;
+  max-width: 1100px;
+}
+
+#about-info .info-right
+{
+  min-height: 100%;
+  width: 50%;
+}
+
+
+#about-info .info-right img
+{
+  display: block;
+  margin: auto;
+  width: 70dvh;
+  border-radius: 50%;
+  height: 70dvh;
+}
+
+#about-info .info-left
+{
+  width: 50%;
+}
+
+#background-video
+{
+  width: 100vw;  
+}
+
+.infcont{
+  height: 85dvh;
+  align-items: center;
+}
+
+
+
+
+
+/* Testimonials */
+#testimonials
+{
+
+  background-image: url('../IMG/pexels-donaldtong94-18929610.jpg');
+  padding-top: 40px;
+  padding-top: 100px;
+
+}
+
+
+#testimonials h2
+{
+  text-align: center;
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+
+#testimonials .testimonial
+{
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+#testimonials .testimonial img
+{
+  max-width:100px ;
+  float: left;
+  margin-right:20px;
+  border-radius: 50%;
+}
+
+#testimonials .testimonial:hover {
+  /* background: red(255, 255, 255, 0.1); */
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/* Rooms Info */
+
+#roomsbody
+{
+   
+   background-color: antiquewhite; 
+   /* background: url('../IMG/bestground.jpg')  center/cover ;
+   color: #fff; */
+}
+
+
+#infocont{
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+}
+
+
+#Color
+{
+  background-color: antiquewhite;
+}
+
+
+
+#Rooms-info .Guest1King
+{
+  min-height: 100%;
+
+}
+
+#Rooms-info .Imageright img
+{
+  display: block;
+  margin: auto;
+  width: 60%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+#infocont{
+  display: flex;
+  flex-direction: row;
+  max-width: 1000px;
+}
+
+
+
+#Rooms-info .Guest2Double
+{
+  min-height: 100%;
+
+}
+
+#Rooms-info .Imagerightt img
+{
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+
+
+#Rooms-info .Clublounge1King
+{
+  min-height: 100%;
+
+}
+
+#Rooms-info .Imagerighttt img
+{
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  
+}
+#Rooms-info .Clublounge2Double
+{
+  min-height: 100%;
+
+}
+
+#Rooms-info .Imagerightttt img
+{
+  display: block;
+  margin: auto;
+  width: 60%;
+  height: auto;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#Rooms-info .Imageright img:hover,
+#Rooms-info .Imagerightt img:hover,
+#Rooms-info .Imagerighttt img:hover,
+#Rooms-info .Imagerightttt img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+
+
+
+#logo{
+  float: left;
+  border-radius: 4rem;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+
+/* Booking Form */
+
+#book-form p
+{
+  color: #fff;
+}
+#book-form
+{
+  background: url('../IMG/nighthotel.jpg') center center/cover;
+}
+
+#book-form .form-group
+{
+
+  margin-bottom: 20px;
+}
+
+#book-form label
+{
+ display: block;
+ margin-bottom: 5px;
+ color:#fff;
+ 
+
+}
+
+
+
+
+#book-form input,
+#book-form textarea
+{
+  border: 1px #ddd solid;
+  resize: none;
+}
+
+#book-form textarea
+{
+  height: 20px;
+
+
+
+}
+
+#booking-info .box1
+{
+  color: #fff;
+  width: 33.3%;
+  float: left;
+  text-align: center;
+
+}
+
+#newcolor
+{
+  background: linear-gradient(270deg, #ff994f,#fa6d86);
+}
+
+
+
+#book-form .btn
+{
+  padding: 20px;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  background: linear-gradient(270deg, #ff994f,#fa6d86);
+
+}
+
+
+
+/* Footer */
+
+#main-footer
+{
+  text-align: center;
+  background: #333;
+  color: #f7c08a;
+  padding: 20px;
+
+}
