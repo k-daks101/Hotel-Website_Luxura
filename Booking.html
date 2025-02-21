@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Welcome to the most extraordinary hotel in Ghana">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+  <script src="https://kit.fontawesome.com/5551f71c86.js" crossorigin="anonymous"></script>
+  <title>Luxura Hotel | Booking </title>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "k-bBt0DYFnqeEOQuy",
+      });
+    })();
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <img src="IMG/logo.png" alt="logo" id="logo">
+        <h1 class="logo"><a href="Index.html"> LUXURA HOTEL </a></h1>
+
+        <ul>
+          <li class="case"><a href="Index.html"> Home </a></li>
+          <li class="case"><a href="About.html"> About </a></li>
+          <li class="case"><a href="Rooms.html"> Rooms </a></li>
+          <li class="case"><a class="current" href="Booking.html"> Booking </a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="book-form" class="py-3">
+    <div class="container">
+      <h1 class="l-heading"> <span class="text-primary"> BOOK A Night Or Two! </span> </h1>
+      <p> Please fill out the form below to make a booking </p>
+      <form>
+        <div class="form-group">
+          <label for="name"> Name </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Email"> Email </label>
+          <input type="Email" name="Email" placeholder="example@gmail.com" id="Email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Phone"> Phone </label>
+          <input type="number" name="Phone" id="Phone" pattern="[0-9]{10}" required>
+        </div>
+
+        <div class="form-group">
+          <label for="Room"> Room Type </label>
+          <select name="Room Type" id="Room-type" required>
+
+            <option value="other"> other </option>
+            <option value="Guest-room-1-King"> Guest Room with one King</option>
+            <option value="Guest-room-2-Double"> Guest Room with two Double</option>
+            <option value="Club-lounge-1-King"> Club lounge with One King</option>
+            <option value="Club-lounge-2-Double"> Club lounge with two Double</option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+          <label for="Message"> Message </label>
+          <textarea name="Message" id="Message" required></textarea>
+        </div>
+
+        <button id="sub_btn" type="submit" class="btn"> Submit</button>
+      </form>
+
+      <!-- <var>var Message = document.createElement("p");
+      message.textContent = "Thank you for submitting this form.";
+       </var> -->
+    </div>
+
+  </section>
+
+  <section id="booking-info" class="bg-dark">
+
+    <div class="container">
+      <h3 id=> For More Information please check below:</h3>
+      <div class="box1">
+        <i class="fa-solid fa-hotel fa-3x"></i>
+        <h3> Location</h3>
+        <p id="newcolor">
+          Airport Residencial Area, Accra, Ghana
+        </p>
+      </div>
+      <div class="box1 ">
+        <i class="fa-solid fa-phone fa-3x"></i>
+        <h3> Phone Number </h3>
+        <p id="newcolor"> 0209088280 </p>
+      </div>
+      <div class="box1">
+        <i class="fa-solid fa-envelope fa-3x"></i>
+        <h3>Email</h3>
+        <p id="newcolor"> frontdesk@hotelluxura.com</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  </div>
+  </section>
+
+
+
+
+
+
+  <footer id="main-footer">
+    <p> Hotel LUXURA &copy; 2024, All Rights Reserved </p>
+  </footer>
+</body>
+<script src="input.js"></script>
+<script>
+  window.embeddedChatbotConfig = {
+  chatbotId: "g2-xNL_4Ly65D46xk98Yj",
+  domain: "www.chatbase.co"
+  }
+  </script>
+  <script
+  src="https://www.chatbase.co/embed.min.js"
+  chatbotId="g2-xNL_4Ly65D46xk98Yj"
+  domain="www.chatbase.co"
+  defer>
+  </script>
+</html>
